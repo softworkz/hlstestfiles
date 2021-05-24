@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WMC Background Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body {
+                background-image:url('images/COMMON.ANIMATED.BACKGROUND.PNG');
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-attachment:fixed;
+                image-rendering: optimizeQuality;
+            }
+
+            @keyframes shard1Position {
+                0%   { right: 750px; bottom: 215px; }
+                55%  { right: 900px; bottom: 215px; }
+                56%  { right: 275px; bottom: 100px; }
+                100% { right: 150px; bottom: 100px; }
+           }
+
+           @keyframes shard1Rotate {
+                0%   { transform: rotate(-24deg) scale(2.56, 2.56); }
+                13%  { transform: rotate(-24deg) scale(2.56, 2.56); }
+                52%  { transform: rotate(-30deg) scale(2.56, 2.56); }
+                58%  { transform: rotate(5deg) scale(1.26, 1.26); }
+                83%  { transform: rotate(20deg) scale(1.26, 1.26); }
+                100% { transform: rotate(20deg) scale(1.26, 1.26); }
+           }
+
+           @keyframes shard1Scale {
+                0%   { transform: scale(2.56, 2.56); }
+                55%  { transform: scale(2.56, 2.56); }
+                56%  { transform: scale(1.26, 1.26); }
+                100% { transform: scale(1.26, 1.26); }
+           }
+
+           @keyframes shard1Alpha {
+                0%   { opacity: 0; }
+                13%  { opacity: 0; }
+                22%  { opacity: 0.1; }
+                52%  { opacity: 0; }
+                58%  { opacity: 0; }
+                65%  { opacity: 0.1; }
+                83%  { opacity: 0; }
+                100% { opacity: 0; }
+           }
+
+            @keyframes layer1 {
+                0%   { opacity: 0; }
+                21%  { opacity: 0; }
+                28%  { opacity: 0.6; }
+                32%  { opacity: 0.6; }
+                51%  { opacity: 0; }
+                65%  { opacity: 0.5; }
+                79%  { opacity: 0.4; }
+                100% { opacity: 0; }
+           }
+
+            @keyframes layer2 {
+                0%   { opacity: 0; }
+                20%  { opacity: 0.6; }
+                42%  { opacity: 0; }
+                53%  { opacity: 0.1 }
+                69%  { opacity: 0.1; }
+                90%  { opacity: 0; }
+                100% { opacity: 0; }
+           }
+           
+            @keyframes layer3 {
+                0%   { opacity: 0.8; }
+                25%  { opacity: 0.1; }
+                40%  { opacity: 0.2; }
+                89%  { opacity: 0.8 }
+                100% { opacity: 0.8; }
+           }
+           
+           #Layer1Image {
+                min-width: 445px;
+                min-height: 717px;
+                position: absolute;
+                right: 0px;
+                bottom: 3px;
+                animation-duration: 18s;
+                animation-name: layer1;
+                animation-iteration-count: infinite;
+              }
+
+              #Layer2Image {
+                min-width: 640px;
+                min-height: 678px;
+                position: absolute;
+                right: 44px;
+                bottom: 28px;
+                animation-duration: 18s;
+                animation-name: layer2;
+                animation-iteration-count: infinite;
+              }
+
+              #Layer3Image {
+                min-width: 1366px;
+                min-height: 302px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                animation-duration: 18s;
+                animation-name: layer3;
+                animation-iteration-count: infinite;
+              }
+              
+              #Shard1Image {
+                position: absolute;
+                animation-duration: 18s, 18s, 18s, 18s;
+                animation-name: shard1Position, shard1Scale, shard1Rotate, shard1Alpha;
+                animation-iteration-count: infinite;
+              }
+              
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <p>ferfgrgf</p>
+
+        <img src="images/COMMON.BACKGROUND.LAYER1.PNG" id="Layer1Image" />
+
+        <img src="images/COMMON.BACKGROUND.LAYER2.PNG" id="Layer2Image" />
+
+        <img src="images/COMMON.BACKGROUND.LAYER3.PNG" id="Layer3Image" />
+
+        <img src="images/COMMON.BACKGROUND.SHARD1.PNG" id="Shard1Image" />
+
+        <script src="" async defer></script>
+    </body>
+</html>
